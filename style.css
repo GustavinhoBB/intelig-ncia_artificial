@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #558a47; /* Verde claro */
+    --cor-principal: #8fd489; /* Verde médio */
+    --cor-secundaria: #91D340; /* Verde escuro */
+    --cor-destaque: #255325; /* Verde musgo */
+    --cor-texto: #1c261d; /* Verde floresta */
 }
 
 body {
@@ -14,30 +13,35 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
+    border: 2px solid var(--cor-secundaria); /* Borda verde escuro */
     border-radius: 15px;
     padding: 15px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+    color: var(--cor-fundo);
+    border-color: var(--cor-destaque); /* Borda verde musgo */
 }
